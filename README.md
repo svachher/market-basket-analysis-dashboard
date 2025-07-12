@@ -50,7 +50,7 @@ by identifying hidden patterns in customer purchasing behavior.
 ## 📂 Key Resources
 
 - 🚀 **Live Dashboard**: [Launch App](https://market-basket-analysis-dashboard-mkjkh2dessyph4qxcb4lr8.streamlit.app/)
-- 📄 **Dashboard PDF Preview**: [market_basket_analysis dashboard.pdf](market_basket_analysis dashboard.pdf)
+- 📄 **Dashboard PDF Preview**: [market_basket_analysis dashboard.pdf](market_basket_analysis%20dashboard.pdf)
 - 📓 **Colab Notebook**: [Market_Basket_Analysis.ipynb](makrket_basket_analysis.ipynb)
 - 📊 **Dataset Source**: [MLxtend Groceries Dataset](http://rasbt.github.io/mlxtend/user_guide/frequent_patterns/apriori/)
 
