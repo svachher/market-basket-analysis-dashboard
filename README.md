@@ -3,7 +3,9 @@
 A live interactive dashboard to uncover frequently co-purchased product combinations using association rule mining — helping retailers optimize product placement, bundling, and promotions.
 
 🔗 **Live Dashboard**: [Streamlit App](https://market-basket-analysis-dashboard-mkjkh2dessyph4qxcb4lr8.streamlit.app/)  
+
 📄 **Dashboard PDF Preview**: [market_basket_analysis dashboard.pdf](market_basket_analysis%20dashboard.pdf)
+
 📓 **Colab Notebook**: [Market Basket Analysis - Google Colab](https://colab.research.google.com/drive/1C3dyi_cexPW968BnMD3j6nTvIWPqNZ84?usp=sharing)
 
 ---
