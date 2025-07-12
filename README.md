@@ -1,105 +1,56 @@
 # 🛒 Retail Market Basket Analytics Dashboard
 
-[![Streamlit](https://img.shields.io/badge/Built%20with-Streamlit-ff4b4b?logo=streamlit&logoColor=white)](https://streamlit.io)
-[![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)
-[![Colab Notebook](https://img.shields.io/badge/View%20Notebook-IPYNB-yellow?logo=jupyter)](Market_Basket_Analysis.ipynb)
-[![View Dashboard](https://img.shields.io/badge/Live%20Dashboard-Open-green?logo=streamlit)](https://market-basket-analysis-dashboard-mkjkh2dessyph4qxcb4lr8.streamlit.app/)
+A live interactive dashboard to uncover frequently co-purchased product combinations using association rule mining — helping retailers optimize product placement, bundling, and promotions.
+
+🔗 **Live Dashboard**: [Streamlit App](https://market-basket-analysis-dashboard-mkjkh2dessyph4qxcb4lr8.streamlit.app/)  
+📄 **Dashboard PDF Preview**: [market_basket_analysis dashboard.pdf](market_basket_analysis%20dashboard.pdf)
+📓 **Colab Notebook**: [Market Basket Analysis - Google Colab](https://colab.research.google.com/drive/1C3dyi_cexPW968BnMD3j6nTvIWPqNZ84?usp=sharing)
 
 ---
 
 ## 📊 Project Overview
 
-This interactive dashboard uses **Association Rule Mining** to uncover frequently co-purchased product combinations using real-world retail data.  
-We use the **Groceries dataset** from the [MLxtend library](http://rasbt.github.io/mlxtend/user_guide/frequent_patterns/apriori/), containing **9,835 transactions** collected from a German grocery store.
+This project leverages **Association Rule Mining** to uncover frequently co-purchased product combinations from real retail data.  
+We use the open-source **Groceries dataset** from the [MLxtend library](http://rasbt.github.io/mlxtend/user_guide/frequent_patterns/apriori/), containing **9,835 transactions** from a German retail store.
+
+### 🔧 Tech Stack & Workflow
+
+- **Data Source**: MLxtend's Groceries dataset
+- **Preprocessing**: Transaction encoding using `TransactionEncoder`
+- **Analytics**: Association Rules using `Apriori` + `MLxtend`
+- **Dashboarding**: Built with **Streamlit** and **Plotly**
+- **Deployment**: Hosted on [Streamlit Cloud](https://streamlit.io/cloud)
+- **Exploration**: Analysis notebook on Google Colab
 
 ---
 
-### 🎯 Goal
+## 🚀 Dashboard Features
 
-Help retail businesses:
-- 🛍️ Optimize product bundling  
-- 🧠 Improve shelf placement  
-- 💸 Launch smarter promotions  
-by identifying hidden patterns in customer purchasing behavior.
-
----
-
-## 🧪 Tech Stack
-
-| Layer         | Tools Used                           |
-|---------------|--------------------------------------|
-| 📦 Data        | MLxtend Groceries Dataset            |
-| 📊 Analytics   | Apriori Algorithm, Association Rules |
-| 🧮 Processing  | Pandas, MLxtend                      |
-| 📈 Visuals     | Plotly                               |
-| 🖥️ Dashboard   | Streamlit                            |
-| ☁️ Hosting     | Streamlit Cloud                      |
+✅ Visualize top-selling items  
+✅ Discover product pairings with strong `Lift`, `Confidence`, and `Support`  
+✅ Filter rules interactively with sliders  
+✅ Interpret graph-level insights directly on the dashboard  
+✅ Export and share as PDF or Web app  
 
 ---
 
-## 🔍 Analytical Workflow
+## 📌 Key Insights
 
-1. **Preprocessing**: Convert transaction records into a binary matrix  
-2. **Apriori Algorithm**: Generate frequent itemsets  
-3. **Association Rules**: Calculate `support`, `confidence`, and `lift`  
-4. **Interactive Filtering**: Explore strongest rules with sliders  
-5. **Insight Extraction**: Visual & business interpretations
-
----
-
-## 📂 Key Resources
-
-- 🚀 **Live Dashboard**: [Launch App](https://market-basket-analysis-dashboard-mkjkh2dessyph4qxcb4lr8.streamlit.app/)
-- 📄 **Dashboard PDF Preview**: [market_basket_analysis dashboard.pdf](market_basket_analysis%20dashboard.pdf)
-- 📓 **Colab Notebook**: [Market_Basket_Analysis.ipynb](makrket_basket_analysis.ipynb)
-- 📊 **Dataset Source**: [MLxtend Groceries Dataset](http://rasbt.github.io/mlxtend/user_guide/frequent_patterns/apriori/)
-
----
-
-## 🛠️ Local Setup Instructions
-
-```bash
-# 1. Clone this repository
-git clone https://github.com/your-username/market-basket-dashboard.git
-cd market-basket-dashboard
-
-# 2. (Optional) Create a virtual environment
-python -m venv venv
-source venv/bin/activate  # For Windows: venv\Scripts\activate
-
-# 3. Install required libraries
-pip install -r requirements.txt
-
-# 4. Launch the app
-streamlit run app.py
-
----
-
----
-
-## 💡 Key Features
-
-✅ Visualize top-purchased products  
-✅ Mine strong product pairings using `Lift`, `Support`, `Confidence`  
-✅ Intuitive filtering with live sliders  
-✅ Business insights below each graph  
-✅ Fully hosted web app for easy sharing  
-✅ Well-documented analysis in notebook form
+- Strong rules often have **moderate support and high lift** (e.g., `root vegetables` → `whole milk`)  
+- Bundles containing **"whole milk", "yogurt", "vegetables"** frequently co-occur  
+- High lift > 2 shows **niche but actionable** product affinities
 
 ---
 
 ## 🤝 Acknowledgements
 
-- Dataset from: [MLxtend - Groceries Example](http://rasbt.github.io/mlxtend/user_guide/frequent_patterns/apriori/)
-- Built using: Streamlit, Plotly, Pandas, MLxtend
+- **Dataset**: [MLxtend – Groceries Dataset](http://rasbt.github.io/mlxtend/user_guide/frequent_patterns/apriori/)  
+- **Libraries**: Streamlit, Pandas, Plotly, MLxtend, Scikit-learn
 
 ---
 
-## 🙋‍♂️ Author
+## 👨‍💻 Author
 
 **Sahil Vachher**  
 B.Tech (Mathematics & Computing), Delhi Technological University  
-📫 [LinkedIn](https://www.linkedin.com/in/sahilvachher) • ✉️ [sahilvachher@gmail.com](mailto:sahilvachher@gmail.com)
-
----
-
+🔗 [LinkedIn](https://www.linkedin.com/in/sahilvachher) • ✉️ [sahilvachher@gmail.com](mailto:sahilvachher@gmail.com)
